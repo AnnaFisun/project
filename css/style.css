@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
+:root {
+  --pink: #e86f54;
+}
+
 body {
   font-family: "Montserrat";
 }
@@ -14,14 +18,50 @@ a {
   color: inherit;
 }
 
+address {
+  font-style: normal;
+}
+
 .container {
   width: 1232px;
   padding: 0 15px;
+  margin: 0 auto;
 }
 
 .header {
   padding-top: 28px;
 }
+
+.hero {
+  background-image: url(../img/hero/image_home_page.webp);
+  background-repeat: no-repeat;
+  background-size: 390px 636px;
+  background-position: center;
+}
+
+.about {
+  padding-bottom: 100px;
+  padding-top: 100px;
+}
+
+.store {
+  padding-bottom: 100px;
+}
+
+.delivery {
+  padding-bottom: 100px;
+}
+
+/*  background-image: url(../img/delivery/image\ delivery.webp);
+  background-size: 1280px 391px;
+  background-repeat: no-repeat;
+  background-position: bottom;*/
+
+
+.blog {
+  padding-bottom: 100px;
+}
+
 .header .container {
   display: flex;
   align-items: center;
@@ -51,6 +91,7 @@ a {
   height: 166px;
   border: none;
   background-color: transparent;
+  display: block;
 }
 
 .title {
@@ -66,7 +107,204 @@ a {
 }
 
 .store-list {
-    display: grid;
-    grid-template-columns: 600px 600px;
-    gap: 32px;
+  display: grid;
+  grid-template-columns: 600px 600px;
+  gap: 32px;
 }
+
+.store-item {
+  width: 600px;
+  height: 640px;
+  padding-bottom: 64px;
+}
+
+.store-img {
+  margin-bottom: 16px;
+}
+
+.store-name {
+  font-weight: 500;
+  font-size: 36px;
+  color: #000;
+  flex-shrink: 1;
+  margin: 0;
+}
+
+.store-description {
+  font-weight: 600;
+  font-size: 28px;
+  color: #000;
+  opacity: 0.6;
+  margin: 0;
+}
+
+.store-btn {
+  display: block;
+  border-radius: 38px;
+  padding: 16px 32px;
+  width: 280px;
+  height: 64px;
+  background-color: var(--pink);
+  border: none;
+  margin: 0 auto;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 86%;
+  color: #fff;
+}
+
+.delivery-description {
+  font-weight: 500;
+  font-size: 32px;
+  color: #000;
+}
+
+.about-text {
+  display: flex;
+  align-items: center;
+  gap: 90px;
+}
+
+.hero-text {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 292px;
+}
+
+.hero-logo {
+  display: block;
+  width: 876px;
+  height: 195px;
+  margin: 0 auto;
+}
+
+.blog-list {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+  justify-content: center;
+}
+
+.blog-description {
+  font-weight: 500;
+  font-size: 32px;
+  color: #000;
+  text-align: center;
+  margin: 44px 0px 48px;
+}
+
+.blog-btn {
+  border-radius: 38px;
+  padding: 16px 32px;
+  width: 280px;
+  height: 64px;
+  background-color: var(--pink);
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 86%;
+  color: #fff;
+  border: none;
+  margin: 0 auto;
+  display: block;
+}
+
+.footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.footer-wrapper {
+  display: flex;
+  gap: 96px;
+}
+
+.hero-logo {
+  margin-top: 140px;
+}
+
+.footer {
+  padding-top: 72px;
+  padding-bottom: 72px;
+  color: white;
+  background-color: #000;
+}
+
+.social-networks {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer-name {
+  font-weight: 700;
+  font-size: 20px;
+  font-family: "Inter";
+}
+
+.footer-link {
+  font-weight: 500;
+  font-size: 16px;
+  font-family: "Inter";
+}
+
+.blog-img {
+  margin-bottom: 44px;
+}
+
+.delivery-list {
+  margin-bottom: 60px;
+}
+
+.name {
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 18px;
+}
+
+.contacts-link {
+  display: block;
+  margin-bottom: 12px;
+  font-weight: 500;
+  font-size: 16px;
+  color: #fff;
+}
+
+.schedule-description {
+  font-weight: 500;
+  font-size: 16px;
+  color: #fff;
+}
+
+.navigation-item {
+  font-weight: 500;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 12px;
+}
+
+.hr-title {
+  border: 1px solid #000;
+  width: 1062px;
+  height: 0px;
+}
+
+.hr {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.hr-name {
+  border: 1px solid #000;
+  width: 340px;
+  height: 0px;
+}
+
+.delivery-item {
+  display: flex;
+  align-items: center;
+  gap: 56px;
+}
+

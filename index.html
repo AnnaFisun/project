@@ -4,13 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/style.css">
   </head>
   <body>
     <header>
       <section class="header">
        <div class="container">
-        <img src="img/logo.svg" alt="logo" class="logo" />
+        <img src="img/header/logo.svg" alt="logo" class="logo" />
         <nav class="header-navigation">
           <ul class="header-list">
             <li class="header-item">
@@ -30,57 +31,70 @@
             </li>
           </ul>
         </nav>
-        <img src="img/tel.svg" alt="tel" class="header-img">
+        <img src="img/header/tel.svg" alt="tel" class="header-img">
        </div>
       </section>
     </header>
     <main>
         <section class="hero">
             <div class="container">
+              <div class="hero-text">
                 <p class="hero-description">flower <br>
-                    studio</p>
-                    <button class="hero-btn"></button>
-                    <h1 class="hero-title">ANEMONE</h1>
+                  studio</p>
+                  <button class="hero-btn"></button>
+              </div>
+                    <img src="img/hero/logotext(1).webp" alt="anemone" class="hero-logo">
             </div>
         </section>
 
         <section class="about">
             <div class="container">
+              <div class="hr">
+                <h2 class="about-title title">ABOUT</h2> <hr class="hr-title">
+              </div>
                 <div class="about-text">
-                    <h2 class="about-title title">ABOUT</h2>
                     <p class="about-description">We are a minimalistic flower studio. We love people and flowers. Therefore, every day we give people the beauty and joy creating stylish and modern masterpieces. Every bouquet we create is unique as you are.</p>
-                </div>
-                <div class="about-img">
-                    <img src="img/image_about.webp" alt="about" class="about-photo">
+                    <img src="img/about/image_about.webp" alt="about" class="about-photo">
                 </div>
             </div>
         </section>
 
         <section class="store">
             <div class="container">
-                <h2 class="store-title title">STORE</h2>
+              <div class="hr">
+                <h2 class="store-title title">STORE</h2> <hr class="hr-title">
+              </div>
                 <ul class="store-list">
                     <li class="store-item">
                         <img src="img/store/bouquet1.webp" alt="first" class="store-img">
-                            <h3 class="store-name">compliments</h3>
+                        <div class="hr">
+                          <h3 class="store-name">compliments</h3> 
+                          <hr class="hr-name">
+                        </div>
                             <p class="store-description">from $15</p>
                         </img>
                     </li>
                     <li class="store-item">
                         <img src="img/store/bouquet2.webp" alt="second" class="store-img">
-                            <h3 class="store-name">bouquets size S</h3>
+                        <div class="hr">
+                          <h3 class="store-name">bouquets size S</h3> <hr class="hr-name">
+                        </div>
                             <p class="store-description">from $25</p>
                         </img>
                     </li>
                     <li class="store-item">
                         <img src="img/store/bouquet3.webp" alt="third" class="store-img">
-                            <h3 class="store-name">bouquets size M</h3>
+                        <div class="hr">
+                          <h3 class="store-name">bouquets size M</h3> <hr class="hr-name">
+                        </div>
                             <p class="store-description">from $45</p>
                         </img>
                     </li>
                     <li class="store-item">
                         <img src="img/store/bouquet4.webp" alt="fourth" class="store-img">
-                            <h3 class="store-name">bouquets size L</h3>
+                        <div class="hr">
+                          <h3 class="store-name">bouquets size L</h3> <hr class="hr-name">
+                        </div>
                             <p class="store-description">from $60</p>
                         </img>
                     </li>
@@ -91,37 +105,44 @@
 
         <section class="delivery">
             <div class="container">
-              <h2 class="delivery-title title">DELIVERY</h2>
-                <ol class="delivery-list">
+              <div class="hr">
+                <h2 class="delivery-title title">DELIVERY</h2> <hr class="hr-title">
+              </div>
+                <ul class="delivery-list">
                     <li class="delivery-item">
+                      <div class="number">1</div>
                         <p class="delivery-description">Choose your bouquet and make an order on website</p>
                     </li>
                     <li class="delivery-item">
+                      <div class="number">2</div>
                         <p class="delivery-description">Wait for the call to clarify the details of the order. <br>
                             You can pay online or to the courier</p>
                     </li>
                     <li class="delivery-item">
+                      <div class="number">3</div>
                         <p class="delivery-description">Wait for the delivery at the selected time or pick up <br>
                             the order from the store </p>
                     </li>
                     <li class="delivery-item">
+                      <div class="number">4</div>
                         <p class="delivery-description">Make someone happy or enjoy yourself</p>
                     </li>
-                </ol>
-                <img src="img/delivery/image delivery.webp" alt="delivery" class="delivery-img">
+                </ul>
             </div>
         </section>
 
         <section class="blog">
-            <h2 class="blog-title">BLOG</h2>
             <div class="container">
+              <div class="hr">
+                <h2 class="blog-title title">BLOG</h2> <hr class="hr-title">
+              </div>
                 <ul class="blog-list">
                     <li class="blog-item">
-                        <img src="img/blog/flowers image1.webp" alt="first" class="blog-img">
+                        <img src="img/blog/flowers image2.webp" alt="first" class="blog-img">
                     </li>
                     <li class="blog-item">
-                        <img src="img/blog/flowers image2.webp" alt="second" class="blog-img">
-                    </li>
+                      <img src="img/blog/flowers image1.webp" alt="second" class="blog-img">
+                  </li>
                     <li class="blog-item">
                         <img src="img/blog/flowers image3.webp" alt="third" class="blog-img">
                     </li>
@@ -135,43 +156,49 @@
     <footer>
         <section class="footer">
             <div class="container">
-              <img src="img/logo.svg" alt="logo" class="logo" />
-            <div class="navigation">
-              <h3 class="navigation-name">Navigation</h3>
-              <nav class="footer-nav">
-                  <ul class="navigation-list">
-                    <li class="navigation-item">
-                      <a href="#" class="navigation-link">Anemone</a>
-                    </li>
-                    <li class="navigation-item">
-                      <a href="#" class="navigation-link">About us</a>
-                    </li>
-                    <li class="navigation-item">
-                      <a href="#" class="navigation-link">Store</a>
-                    </li>
-                    <li class="navigation-item">
-                      <a href="#" class="navigation-link">Delivery</a>
-                    </li>
-                    <li class="navigation-item">
-                      <a href="#" class="navigation-link">Blog</a>
-                    </li>
-                  </ul>
-                </nav>
-            </div>
-            <div class="schedule">
-              <h3 class="schedule-name">Opening times</h3>
-              <p class="schedule-description">Every day <br>
-                9:00 - 22:00</p>
-            </div>
-            <div class="contacts">
-              <h3 class="contacts-name">Contacts</h3>
-              <address class="contacts-address">
-                <a href="tel:+38 063 123 45 67" class="contacts-link"></a>
-                <a href="mailto:anemonestudio@example.com" class="contacts-link"></a>
-                <p class="contacts-description">Reitarska Street, 11 <br>
-                  Kyiv, Ukraine</p>
-              </address>
-            </div>
+              <img src="img/footer/footerlogo.svg" alt="logo" class="logo" />
+              <div class="footer-wrapper">
+                <div class="navigation">
+                  <h3 class="navigation-name name">Navigation</h3>
+                <nav class="footer-nav">
+                    <ul class="navigation-list">
+                      <li class="navigation-item">
+                        <a href="#" class="navigation-link">Anemone</a>
+                      </li>
+                      <li class="navigation-item">
+                        <a href="#" class="navigation-link">About us</a>
+                      </li>
+                      <li class="navigation-item">
+                        <a href="#" class="navigation-link">Store</a>
+                      </li>
+                      <li class="navigation-item">
+                        <a href="#" class="navigation-link">Delivery</a>
+                      </li>
+                      <li class="navigation-item">
+                        <a href="#" class="navigation-link">Blog</a>
+                      </li>
+                    </ul>
+                  </nav>
+              </div>
+              <div class="schedule">
+                <h3 class="schedule-name name">Opening times</h3>
+                <p class="schedule-description">Every day <br>
+                  9:00 - 22:00</p>
+              </div>
+              <div class="contacts">
+                <h3 class="contacts-name name">Contacts</h3>
+                <address class="contacts-address">
+                  <a href="tel:+38 063 123 45 67" class="contacts-link">+38 063 123 45 67</a>
+                  <a href="mailto:anemonestudio@example.com" class="contacts-link">anemonestudio@example.com</a>
+                  <p class="contacts-description">Reitarska Street, 11 <br>
+                    Kyiv, Ukraine</p>
+                </address>
+              </div>
+              </div>
+              <div class="social-networks">
+                <img src="img/footer/facebook.svg" alt="facebook">
+                <img src="img/footer/instagram.svg" alt="instagram">
+              </div>
             </div>
         </section>
     </footer>
