@@ -51,7 +51,7 @@ address {
 .delivery {
   height: 1017px;
   background-image: url(../img/delivery/image\ delivery.webp);
-  background-size: 1280px 391px;
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: bottom;
 }
@@ -76,6 +76,12 @@ address {
   font-weight: 400;
   font-size: 20px;
   color: #000;
+}
+
+.header-link:hover {
+  font-weight: 400;
+  font-size: 20px;
+  color: var(--pink);
 }
 
 .hero-description {
@@ -169,6 +175,7 @@ address {
   line-height: 86%;
   color: #fff;
   cursor: pointer;
+  margin-top: 60px;
 }
 
 .store-btn:focus {
@@ -184,6 +191,7 @@ address {
   font-size: 28px;
   line-height: 86%;
   color: #fff;
+  margin-top: 60px;
 }
 
 .delivery-description {
@@ -197,6 +205,7 @@ address {
   display: flex;
   align-items: center;
   gap: 90px;
+  margin-top: 26px;
 }
 
 .hero-text {
@@ -218,6 +227,7 @@ address {
   gap: 32px;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 
 .blog-description {
@@ -364,7 +374,8 @@ address {
 
 .hr-name {
   border: 1px solid #000;
-  width: 340px;
+  max-width: 280px;
+  width: 100%;
   height: 0px;
 }
 
@@ -387,10 +398,25 @@ address {
   margin-top: 122px;
 }
 
-.blog.img:nth-child(1)::before {
+.blog-list::before {
+  content: "";
   background-image: url(../img/blog/left-arrow.svg);
-  background-size: 97px 64px;
-  width: 97px;
-  height: 64px;
+  background-repeat:no-repeat;
+  height: 96px;
+  width: 96px;
+  display: block;
+  position: absolute;
+  top: 301px;
+  left: 20px;
 }
-
+.blog-list::after {
+  content: "";
+  background-image: url(../img/blog/right-arrow.svg);
+  background-repeat:no-repeat;
+  height: 96px;
+  width: 96px;
+  display: block;
+  position: absolute;
+  top: 301px;
+  right: 20px;
+}
