@@ -4,6 +4,9 @@
   --pink: #e86f54;
 }
 
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: "Montserrat";
 }
@@ -50,7 +53,7 @@ address {
 
 .delivery {
   height: 1017px;
-  background-image: url(../img/delivery/image\ delivery.webp);
+  background-image:url(../img/delivery/image-delivery.webp) ;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: bottom;
@@ -347,6 +350,10 @@ address {
   color: #fff;
 }
 
+.contacts-link:hover {
+  color: var(--pink);
+}
+
 .schedule-description {
   font-weight: 500;
   font-size: 16px;
@@ -358,6 +365,10 @@ address {
   font-size: 16px;
   color: #fff;
   margin-bottom: 12px;
+}
+
+.navigation-link:hover {
+  color: var(--pink);
 }
 
 .hr-title {
